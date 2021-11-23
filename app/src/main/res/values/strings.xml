@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="water_scarcity">Water Scarcity</string>
+    <string name="trivia">Trivia</string>
+    <string name="play">Play</string>
+    <string name="what_are_the_effects_of_water_scarcity">what are the effects of water scarcity?</string>
+    <string name="no_insects">No Insects</string>
+    <string name="drinkable_water">drinkable water</string>
+    <string name="healthy_water">healthy water</string>
+    <string name="less_water_dirty_water_more_insects_undrinkable_water">less water, dirty water, more insects, undrinkable water</string>
+    <string name="save_water">save water</string>
+    <string name="earth_water">earth water</string>
+    <string name="tree_water">tree water</string>
+    <string name="submit">Submit</string>
+</resources>

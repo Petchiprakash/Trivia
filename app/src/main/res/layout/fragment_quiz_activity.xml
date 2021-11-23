@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cffc9b"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/save_water"
+        android:src="@drawable/save_water"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/earth_water"
+        android:src="@drawable/earth_water"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/tree_water"
+        android:src="@drawable/tree_water"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <TextView
+        android:id="@+id/questionOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/what_are_the_effects_of_water_scarcity"
+        android:textColor="#0f5e9c"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgChoose"
+        android:layout_width="348dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionOne">
+
+        <RadioButton
+            android:id="@+id/rbChoose1"
+            android:layout_width="347dp"
+            android:layout_height="46dp"
+            android:text="@string/less_water_dirty_water_more_insects_undrinkable_water"
+            android:textColor="#0f5e9c"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbChoose2"
+            android:layout_width="347dp"
+            android:layout_height="46dp"
+            android:text="@string/healthy_water"
+            android:textColor="#0f5e9c"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbChoose3"
+            android:layout_width="347dp"
+            android:layout_height="46dp"
+            android:text="@string/drinkable_water"
+            android:textColor="#0f5e9c"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbChoose4"
+            android:layout_width="347dp"
+            android:layout_height="46dp"
+            android:text="@string/no_insects"
+            android:textColor="#0f5e9c"
+            android:textSize="18sp" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/water"
+        android:text="@string/submit"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgChoose" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
